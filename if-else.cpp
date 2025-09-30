@@ -1,8 +1,8 @@
 #include <iostream> 
 using namespace std;
-// if-else 
-/*
-int main() {
+int main(){
+
+
     int age;
     cout << "Enter your age: ";
     cin >> age;
@@ -12,57 +12,53 @@ int main() {
     } else if (age <18 ) {
         cout << "You are not an adult." << endl;
     }
-return 0;
-}
-*/
-// int main() {
-//     int marks;
-//     cout << "Enter your marks: ";
-//     cin >> marks;
-//     if(marks <= 25) {
-//         cout<< "grade F" << endl;
-//     }
-//     else if (marks <=44){
-//         cout << "grade E" << endl;}
-//     else if (marks <= 59) {
-//         cout << "grade D" << endl;
-//     }   
-//     else if (marks <= 74) {
-//         cout << "grade C" << endl;
-//     }
-//     else if (marks <= 89) {
-//         cout << "grade B" << endl;
-//     }
-//     else if (marks <= 100) {
-//         cout << "grade A" << endl;
-//     }
-//     else {
-//         cout << "Invalid marks" << endl;
-//     }
-//     return 0;   
-
-// }
 
 
-// int main() {
-//     int age;
-//     cout << "Enter your age: ";
-//     cin >> age;
+    int marks;
+    cout << "Enter your marks: ";
+    cin >> marks;
+    if(marks <= 25) {
+        cout<< "grade F" << endl;
+    }
+    else if (marks <=44){
+        cout << "grade E" << endl;}
+    else if (marks <= 59) {
+        cout << "grade D" << endl;
+    }   
+    else if (marks <= 74) {
+        cout << "grade C" << endl;
+    }
+    else if (marks <= 89) {
+        cout << "grade B" << endl;
+    }
+    else if (marks <= 100) {
+        cout << "grade A" << endl;
+    }
+    else {
+        cout << "Invalid marks" << endl;
+    }
+  
 
-//     if (age < 18) {
-//         cout << "You are a minor." << endl;
-//     } else {
-//         if (age < 60) {
-//             cout << "You are an adult." << endl;
-//         } else {
-//             cout << "You are a senior citizen." << endl;
-//         }
-//     }
 
-//     return 0;
-// }
 
-int main() {
+
+
+    int Age;
+    cout << "Enter your age: ";
+    cin >> Age;
+
+    if (Age < 18) {
+        cout << "You are a minor." << endl;
+    } else {
+        if (Age < 60) {
+            cout << "You are an adult." << endl;
+        } else {
+            cout << "You are a senior citizen." << endl;
+        }
+    }
+
+
+
     int day;
     cout << "Enter a number (1-7) for the day of the week: ";
     cin >> day;
