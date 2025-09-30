@@ -49,3 +49,7 @@ int main() {
 
 //This works only when your array values are ≤ n (or at least smaller than the size of the hash array).
 //If the user enters very large numbers (e.g., 1000 when n = 5), this will cause out-of-bounds access (undefined behavior).
+
+
+ 
+
