@@ -94,10 +94,31 @@ int f6(int n ){ //fibonacci number using recursion
     int slast = f6(n-2);
     return last + slast;
 }
+
+void F5(int ind , vector<int> &ds , int arr[], int n){
+    if(ind ==n){
+        for (auto it : ds){
+            cout<<it<<" ";
+        }
+        if(ds.size()==0){
+            cout<<"{}";
+        }
+        cout<<endl;
+        return;
+    }
+        //take or pick the element
+        ds.push_back(arr[ind]);
+        F5(ind+1 , ds , arr , n);
+        ds.pop_back();
+        //not take or not pick the element
+        F5(ind+1 , ds , arr , n);
+
+    }
+
 int main() {
-    int n;
-    int  i ;
-    cin >> n;
+    // int n;
+    // int  i ;
+    // cin >> n;
     // int a[n];
     // for (int i = 0; i < n; i++) 
     // cin >> a[i]; 
@@ -109,7 +130,15 @@ int main() {
     // cout << "Palindrome check: " << f5(s, 0) 
     //      << " | String size: " << s.size()
     //      << " | Last index: " << s.size() - 1 << endl;
-     cout<<f6(n)<<endl;
+    //  cout<<f6(n)<<endl;
+
+
+    //for print all subsequences of an array
+    int arr[] = {3, 1, 2};
+    int n = 3;
+    vector<int> ds;
+    F5(0 , ds , arr , n);
+
 
     
     return 0;
