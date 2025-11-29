@@ -39,13 +39,14 @@ void mS (vector<int> &arr , int low , int high){
     mS(arr , mid+1 , high); //for right
     merge(arr , low , mid , high);
 }
-void mergeSort(vector <int>& arr, int n){
-    mS(arr , 0 , n-1);
-}
+// void mergeSort(vector <int>& arr, int n){
+//     mS(arr , 0 , n-1);
+// }
 
 int main(){
-    vector<int> arr = {9,5,1,4,3};
-    mergeSort(arr, arr.size());
+    vector<int> arr = {9,5,1,4,9};
+    mS(arr, 0, arr.size() - 1);
+    // mergeSort(arr, arr.size());
 
     for(int x : arr){
         cout << x << " ";
