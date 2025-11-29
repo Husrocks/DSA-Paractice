@@ -42,7 +42,7 @@ void merge (vector<int> & arr , int low , int mid ,int high){
 
 void mergeSortRecursive (vector<int> &arr , int low , int high){
     if(low == high ) return;   // Base condition – when only 1 element, return
-    int mid = (low +(high-low))/2;   // Avoids integer overflow
+    int mid = low +(high-low)/2;   // Avoids integer overflow
     mergeSortRecursive(arr , low , mid); // Sort left half
     mergeSortRecursive(arr , mid+1 , high); // Sort right  half
     merge(arr , low , mid , high);
